@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <h1>Book Details</h1>
+  <p id="first-book-title"></p>
+  <p id="second-book-author"></p>
+  <p id="all-book-genres"></p>
+
+  <script>
+    $(document).ready(function () {
+      const books = [
+        {
+          "title": "The Great Gatsby",
+          "author": "F. Scott Fitzgerald",
+          "publicationYear": 1925,
+          "genres": ["Fiction", "Classics"]
+        },
+        {
+          "title": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "publicationYear": 1960,
+          "genres": ["Fiction", "Coming-of-Age"]
+        }
+      ];
+
+      // (a) Display the title of the first book
+      $("#first-book-title").text("Title of the first book: " + books[0].title);
+
+      // (b) Display the author of the second book
+      $("#second-book-author").text("Author of the second book: " + books[1].author);
+
+      // (c) Display the genres of all books
+      const allGenres = books.map(book => book.genres.join(", ")).join("; ");
+      $("#all-book-genres").text("Genres of all books: " + allGenres);
+    });
+  </script>
+</body>
+</html>

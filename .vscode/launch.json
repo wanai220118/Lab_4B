@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open books.html",
+            "file": "c:\\Users\\user\\Desktop\\UTHM\\SEM 5\\BIC21203 - WEB DEVELOPMENT [3]\\LAB\\LAB 4b\\Lab_4B\\books.html"
+        }
+    ]
+}
